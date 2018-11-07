@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import moment from 'moment';
 import numeral from 'numeral';
 
-const ExpenseListItem = ({ dispatch, id, description, amount, createdAt }) => (
+const ExpenseListItem = ({ id, description, amount, createdAt }) => (
   <div>
     <Link to={`/edit/${id}`}>Edit</Link>
     <p>{description}</p>
